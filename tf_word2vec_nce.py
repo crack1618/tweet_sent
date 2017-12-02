@@ -112,7 +112,7 @@ def read_data(filename):
                     data += [word]
     return data
 
-filename = 'data/cleansed_aa'
+filename = 'data/cleansed_aa.ds'
 vocabulary = read_data(filename)
 print('Data size', len(vocabulary))
 
@@ -254,7 +254,7 @@ with graph.as_default():
   init = tf.global_variables_initializer()
 
 # Step 5: Begin training.
-num_steps = 300001
+num_steps = 500001
 
 with tf.Session(graph=graph) as session:
   # We must initialize all variables before we use them.

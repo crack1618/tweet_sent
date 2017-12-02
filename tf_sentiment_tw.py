@@ -36,7 +36,7 @@ class Cnn:
         self.b_fc1 = self.bias_variable([1024])
       # Map the 1024 features to 10 classes, one for each digit
       with tf.name_scope('fc2'):
-        self.W_fc2 = self.weight_variable([1024, 10])
+        self.W_fc2 = self.weight_variable([1024, 3])
         self.b_fc2 = self.bias_variable([10])
 
   def def_model(self):
